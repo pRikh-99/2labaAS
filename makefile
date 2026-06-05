@@ -1,10 +1,10 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -std=c11
 
-SRCS = allocator.c sys_alloc.c linear_allocator.c pool_allocator.c buddy_allocator.c
+SRCS = allocator.c sys_alloc.c linear_allocator.c pool_allocator.c buddy_allocator.c arraylist.c queue.c hashtable.c
 OBJS = $(SRCS:.c=.o)
 
-HDRS = allocator.h sys_alloc.h linear_allocator.h pool_allocator.h buddy_allocator.h
+HDRS = allocator.h sys_alloc.h linear_allocator.h pool_allocator.h buddy_allocator.h arraylist.h queue.h hashtable.h
 
 .PHONY: all clean test test_run
 
