@@ -3,7 +3,6 @@
 
 #include "allocator.h"
 
-/* Контекст линейного (arena) аллокатора */
 typedef struct {
     void*  buffer;   /* Начало выделенной области */
     size_t size;     /* Общий размер */

@@ -8,7 +8,6 @@ typedef struct PoolNode {
     struct PoolNode* next;
 } PoolNode;
 
-/* Контекст пул-аллокатора */
 typedef struct {
     void*    buffer;
     size_t   block_size;

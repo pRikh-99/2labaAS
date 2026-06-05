@@ -9,7 +9,6 @@ typedef struct BuddyBlock {
     struct BuddyBlock* next;
 } BuddyBlock;
 
-/* Контекст buddy-аллокатора */
 typedef struct {
     void*    buffer;         /* Начало пула, выровнено до размера пула */
     size_t   size;           /* Размер пула, степень двойки */
